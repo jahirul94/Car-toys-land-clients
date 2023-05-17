@@ -3,7 +3,7 @@
 const Slider = () => {
 
     const carouselText = <>
-       <div className="absolute rounded-xl flex items-center  h-full left-0 right-5  text-white bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] ps-8">
+        <div className="absolute rounded-xl flex items-center  h-full left-0 right-5  text-white bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] ps-8">
             <div className="ps-16">
                 <h2 className="text-white font-bold text-4xl">DEDICATED TO THE SPORT <br /> OF MODEL AVIATION </h2>
             </div>
