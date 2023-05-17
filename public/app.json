@@ -1,0 +1,45 @@
+[
+    {
+      "name": "Basketball",
+      "category": "Outdoor",
+      "picture": "basketball.jpg",
+      "price": 19.99,
+      "rating": 4.5
+    },
+    {
+      "name": "Soccer Ball",
+      "category": "Outdoor",
+      "picture": "soccer_ball.jpg",
+      "price": 14.99,
+      "rating": 4.2
+    },
+    {
+      "name": "Tennis Racket",
+      "category": "Outdoor",
+      "picture": "tennis_racket.jpg",
+      "price": 29.99,
+      "rating": 4.7
+    },
+    {
+      "name": "Baseball Bat",
+      "category": "Outdoor",
+      "picture": "baseball_bat.jpg",
+      "price": 24.99,
+      "rating": 4.3
+    },
+    {
+      "name": "Golf Club Set",
+      "category": "Outdoor",
+      "picture": "golf_club_set.jpg",
+      "price": 99.99,
+      "rating": 4.8
+    },
+    {
+      "name": "Table Tennis Paddle",
+      "category": "Indoor",
+      "picture": "table_tennis_paddle.jpg",
+      "price": 9.99,
+      "rating": 4.1
+    }
+  ]
+  
