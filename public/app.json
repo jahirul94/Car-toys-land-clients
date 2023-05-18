@@ -1,45 +1,112 @@
 [
-    {
-      "name": "Basketball",
-      "category": "Outdoor",
-      "picture": "basketball.jpg",
+  {
+      "name": "LotFancy Teddy Bear ",
+      "category": "teddy bear",
       "price": 19.99,
-      "rating": 4.5
-    },
-    {
-      "name": "Soccer Ball",
-      "category": "Outdoor",
-      "picture": "soccer_ball.jpg",
-      "price": 14.99,
-      "rating": 4.2
-    },
-    {
-      "name": "Tennis Racket",
-      "category": "Outdoor",
-      "picture": "tennis_racket.jpg",
-      "price": 29.99,
-      "rating": 4.7
-    },
-    {
-      "name": "Baseball Bat",
-      "category": "Outdoor",
-      "picture": "baseball_bat.jpg",
-      "price": 24.99,
-      "rating": 4.3
-    },
-    {
-      "name": "Golf Club Set",
-      "category": "Outdoor",
-      "picture": "golf_club_set.jpg",
-      "price": 99.99,
-      "rating": 4.8
-    },
-    {
-      "name": "Table Tennis Paddle",
-      "category": "Indoor",
-      "picture": "table_tennis_paddle.jpg",
+      "rating": 4.5,
+      "sellerName": "Toy Land",
+      "sellerEmail": "toyland@example.com",
+      "availableQuantity": 10,
+      "toysPicture": "https://m.media-amazon.com/images/I/91oxSXgVD6L.jpg",
+      "detailDescription": "This adorable LotFancy Teddy Bear toy is perfect for cuddling. It's made from soft, high-quality materials and is safe for children of all ages."
+  },
+  {
+      "name": "Teddy Bear",
+      "category": "teddy bear",
+      "price": 12.99,
+      "rating": 4.2,
+      "sellerName": "Puzzle World",
+      "sellerEmail": "puzzleworld@example.com",
+      "availableQuantity": 5,
+      "toysPicture": "https://static-01.daraz.com.bd/p/cd5ae59e6b9cfdf74e7b2f91911670fe.jpg",
+      "detailDescription": "ThisTeddy Bear is a fun and enjoyable toy. It's made from durable clothes and features colorful pieces that are easy to assemble."
+  },
+  {
+      "name": "Love Teddy Bear",
+      "category": "teddy bear",
       "price": 9.99,
-      "rating": 4.1
-    }
-  ]
-  
+      "rating": 4.8,
+      "sellerName": "Pet Planet",
+      "sellerEmail": "petplanet@example.com",
+      "availableQuantity": 15,
+      "toysPicture": "https://images.news18.com/ibnlive/uploads/2022/02/happy-teddy-day-16443778674x3.jpg",
+      "detailDescription": "This adorable LotFancy Teddy Bear toy is perfect for cuddling. It's made from soft, high-quality materials and is safe for children of all ages."
+  },
+  {
+    "name": "Domestic cat",
+    "category": "cat",
+    "price": 14.99,
+    "rating": 4.6,
+    "sellerName": "Pet Palace",
+    "sellerEmail": "petpalace@example.com",
+    "availableQuantity": 8,
+    "toysPicture": "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg",
+    "detailDescription": "Keep your cat entertained for hours with this interactive toy. It features a dangling feather and a scratching post, perfect for satisfying your cat's natural instincts"
+},
+{
+    "name": "Best cat toys of 2020 to entertain your pet",
+    "category": "cat",
+    "price": 24.99,
+    "rating": 4.4,
+    "sellerName": "Jurassic Toys",
+    "sellerEmail": "jurassictoys@example.com",
+    "availableQuantity": 3,
+    "toysPicture": "https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/09/29/16/cat-toys-comp.jpg?width=1200",
+    "detailDescription": "Keep your cat entertained for hours with this interactive toy. It features a dangling feather and a scratching post, perfect for satisfying your cat's natural instincts"
+},
+{
+    "name": " Potaroma Chirping Cat Toys Balls with SilverVine Catnip,",
+    "category": "cat",
+    "price": 6.99,
+    "rating": 4.1,
+    "sellerName": "Melody Makers",
+    "sellerEmail": "melodymakers@example.com",
+    "availableQuantity": 12,
+    "toysPicture": "https://m.media-amazon.com/images/I/4192vYfH8uL._AC_.jpg",
+    "detailDescription": "Keep your cat entertained for hours with this interactive toy. It features a dangling feather and a scratching post, perfect for satisfying your cat's natural instincts."
+},
+{
+  "name": "Dogs Teddy",
+  "category": "dogs",
+  "price": 11.99,
+  "rating": 4.7,
+  "sellerName": "Nature's Gift",
+  "sellerEmail": "naturesgift@example.com",
+  "availableQuantity": 20,
+  "toysPicture": "https://cdn.shopify.com/s/files/1/0529/8693/7544/products/631_CHAR_840px_360x.png?v=1631621515,%20https://cdn.shopify.com/s/files/1/0529/8693/7544/products/631_CHAR_840px_480x.png?v=1631621515%20480w",
+  "detailDescription": "This plush turtle toy is made from ultra-soft materials and features a realistic design. It's perfect for both playtime and snuggling."
+},
+{
+  "name": "Dogs",
+  "category": "dogs",
+  "price": 29.99,
+  "rating": 4.3,
+  "sellerName": "Happy Farm",
+  "sellerEmail": "happyfarm@example.com",
+  "availableQuantity": 7,
+  "toysPicture": "https://i.guim.co.uk/img/media/e74b0d391417c4533bcb58884593e3ee539b04d1/269_103_1533_920/master/1533.jpg?width=1200&quality=85&auto=format&fit=max&s=e42ab4bbdb726beb58dfdf9902bcc7d1",
+  "detailDescription": "Introduce your child to the wonders of the farm with this interactive playset. It includes various farm animal figures and a barn for endless imaginative play."
+},
+{
+  "name": "Unicron toys",
+  "category": "unicorn",
+  "price": 17.99,
+  "rating": 4.9,
+  "sellerName": "Talking Toys Inc.",
+  "sellerEmail": "talkingtoys@example.com",
+  "availableQuantity": 2,
+  "toysPicture": "https://www.babycare.com.bd/image/cache/catalog/New/51p4EF+GFPL._AC_SL1000_-500x500.jpg",
+  "detailDescription": "This talking parrot toy repeats what you say in a funny voice. It's an entertaining companion for both kids and adults."
+},
+{
+  "name": "Best Unicorn Gifts for Kids Cool Unicorn Toys",
+  "category": "unicorn",
+  "price": 15.99,
+  "rating": 4.0,
+  "sellerName": "Learning Fun",
+  "sellerEmail": "learningfun@example.com",
+  "availableQuantity": 9,
+  "toysPicture": "https://i.insider.com/619269bfd672280019245096?width=1000&format=jpeg&auto=webp",
+  "detailDescription": "Let your child enjoy the thrill of fishing with this magnetic unicron game. It helps develop hand-eye coordination and counting skills in a fun and interactive way."
+}
+]
