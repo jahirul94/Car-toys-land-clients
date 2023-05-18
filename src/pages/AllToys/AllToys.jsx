@@ -6,7 +6,7 @@ const AllToys = () => {
     return (
          <div className="lg:grid grid-cols-3 gap-4 my-10">
             {
-              toys.map(toy => <DisPlayAllToys key={toy._id} toy = {toy}></DisPlayAllToys>)
+              toys?.map(toy => <DisPlayAllToys key={toy._id} toy = {toy}></DisPlayAllToys>)
             }
          </div>
     );

@@ -1,15 +1,45 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
+    // logout functionality 
     const handleLogOut = () => {
-        logOut()
-            .then(() => { })
-            .catch(err => console.log(err))
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "Do You want to logout this Account ?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, Log Out !'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                     logOut()
+                    .then(() => {
+                        Swal.fire(
+                            'Log Out!',
+                            'Your Account has been Logged Out.',
+                            'success'
+                        )
+                    })
+                    .catch(err => console.log(err))
+            }
+        })
     }
+
+
+
+
+
+
+
+
+
+
 
     const navOption = <>
         <li><Link className="font-semibold" to='/'>Home</Link></li>
@@ -19,7 +49,7 @@ const Header = () => {
             <li><Link className="font-semibold" to='/myToys'>My Toys</Link></li>
             <li><Link className="font-semibold" to='/addAToys'>Add A Toy</Link></li>
             <li><button className="font-semibold" onClick={handleLogOut}>Log Out</button></li>
-        </div> }
+        </div>}
     </>
     return (
         <div>
@@ -44,7 +74,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    { user ? <img className="w-14 rounded-full" title={ user?.displayName} src = {user?.photoURL} alt="" /> : <button className="font-semibold px-8"><Link to='/login'>Login</Link></button>}
+                    {user ? <img className="w-14 rounded-full" title={user?.displayName} src={user?.photoURL} alt="" /> : <button className="font-semibold px-8"><Link to='/login'>Login</Link></button>}
                 </div>
             </div>
         </div>

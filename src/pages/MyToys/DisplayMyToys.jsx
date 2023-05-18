@@ -17,7 +17,7 @@ const DisplayMyToys = ({ myToy , handleDelete }) => {
                             <div className="flex items-center space-x-3">
                                 <div className="avatar">
                                     <div className="mask mask-squircle w-20 h-20">
-                                        <img src={toysPicture} alt="Avatar Tailwind CSS Component" />
+                                        <img src={toysPicture} alt="Picture not available" />
                                     </div>
                                 </div>
                                 <div>

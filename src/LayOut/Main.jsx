@@ -4,13 +4,15 @@ import Footer from "../pages/Shared/Footer/Footer";
 
 
 const Main = () => {
-    return (
-        <div className="bg-slate-200 px-12">
-             <Header></Header>
-               <Outlet></Outlet>
-             <Footer></Footer>
-        </div>
-    );
+  return (
+    <div className="bg-slate-200">
+      <Header></Header>
+      <div className="mx-10">
+        <Outlet></Outlet>
+      </div>
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default Main;

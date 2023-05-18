@@ -57,7 +57,7 @@ const MyToys = () => {
 
 
     return (
-        <div>
+        <div className="my-10 min-h-screen">
             {
                 myToys.map(myToy => <DisplayMyToys
                     key={myToy._id}

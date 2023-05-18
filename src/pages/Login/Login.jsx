@@ -1,14 +1,17 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from 'react-icons/fa';
+import Swal from "sweetalert2";
 
 
 const Login = () => {
-    const { logInUser ,loginWithGoogle } = useContext(AuthContext)
-    const [ error , setError ] = useState("");
+    const { logInUser, loginWithGoogle } = useContext(AuthContext)
+    const [error, setError] = useState("");
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/'
+
     const handleLogin = event => {
         event.preventDefault();
         const form = event.target;
@@ -19,9 +22,14 @@ const Login = () => {
         logInUser(email, password)
             .then(result => {
                 const user = result.user;
-                if(user){
-                    toast("User Login Successfully !")
+                if (user) {
+                    Swal.fire(
+                        'Login!',
+                        'Your Account Log in Successfully.',
+                        'success'
+                    )
                     form.reset();
+                    navigate(from , {replace : true})
                 }
             })
             .catch(err => {
@@ -29,21 +37,28 @@ const Login = () => {
             })
     }
 
-    const handleLoginWithGoogle = () =>{
+    const handleLoginWithGoogle = () => {
         setError("")
         loginWithGoogle()
-        .then(result =>{
-            const loggedUser = result.user;
-            // console.log(loggedUser);
-        })
-        .catch(err =>{
-          setError(err.message);
-        })
+            .then(result => {
+                const loggedUser = result.user;
+                if(loggedUser){
+                    Swal.fire(
+                        'Done!',
+                        'Your Account Log in Successfully.',
+                        'success'
+                    )
+                    navigate(from , {replace : true})
+                }
+            })
+            .catch(err => {
+                setError(err.message);
+            })
     }
 
     return (
         <div className="hero min-h-screen mt-4">
-           <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
+            <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
                 <div className="card-body">
                     <form onSubmit={handleLogin}>
                         <div className="form-control">
@@ -67,12 +82,11 @@ const Login = () => {
                             <h5>New to Sports Toys ? <Link to='/register' className='text-orange-600 font-bold'>Register </Link></h5>
                         </div>
                     </form><hr />
-                        <div className="flex justify-center">
-                            <button onClick={handleLoginWithGoogle} className="flex items-center">Connect With <FaGoogle className="ms-2"></FaGoogle></button>
-                        </div><hr />
-                   </div>
+                    <div className="flex justify-center">
+                        <button onClick={handleLoginWithGoogle} className="flex items-center">Connect With <FaGoogle className="ms-2"></FaGoogle></button>
+                    </div><hr />
+                </div>
             </div>
-            <ToastContainer />
         </div>
     );
 };

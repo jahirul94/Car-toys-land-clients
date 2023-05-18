@@ -1,9 +1,8 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { updateProfile } from "firebase/auth";
+import Swal from "sweetalert2";
 
 const Register = () => {
     const [ error , setError ] = useState("");
@@ -20,7 +19,11 @@ const Register = () => {
             const user = result.user ;
             if(user){
                 updateData( user , name , photo )
-                toast("User Created Successfully !")
+                Swal.fire(
+                    'Done!',
+                    'Your Account Created Successfully',
+                    'success'
+                )
                 form.reset();
             }
         })
@@ -76,7 +79,6 @@ const Register = () => {
                  </form>
              </div>
          </div>
-         <ToastContainer />
      </div>
     );
 };
