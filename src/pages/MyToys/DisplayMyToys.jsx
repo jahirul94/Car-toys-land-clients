@@ -32,7 +32,7 @@ const DisplayMyToys = ({ myToy , handleDelete }) => {
                         </td>
                         <td><p className="text-md font-semibold">Category : {category}</p></td>
                         <th>
-                            <Link to={``}><button className="btn btn-outline btn-primary me-0">Update Toys</button></Link>
+                            <Link to={`/myToys/${_id}`}><button className="btn btn-outline btn-primary me-0">Update Toys</button></Link>
                             <button onClick={() => handleDelete(_id)} className="btn btn-outline btn-error ms-2 me-0"><FaTrash></FaTrash></button>
                         </th>
                     </tr>
