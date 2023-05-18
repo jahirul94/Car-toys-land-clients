@@ -12,12 +12,8 @@ const Slider = () => {
     </>
 
 
-
-
-
-
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
             <div className="carousel w-11/12">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://media.istockphoto.com/id/175005911/photo/balls-isolated-on-white.jpg?b=1&s=170667a&w=0&k=20&c=2rV297wFgSPu8Crvc_wQI_dCWJQxrW-QbEi8wep6Wgo=" className="w-full" />

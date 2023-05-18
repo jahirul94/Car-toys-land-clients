@@ -3,7 +3,7 @@ import '@smastrom/react-rating/style.css'
 import { FaArrowRight } from "react-icons/fa";
 
 const Toys = ({ toy }) => {
-    const { name, _id, category, toysPicture, price, rating } = toy;
+    const { name, _id, category,  toysPicture, price, rating } = toy ;
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
             <figure><img className="max-h-64" src={toysPicture} alt="Shoes" /></figure>

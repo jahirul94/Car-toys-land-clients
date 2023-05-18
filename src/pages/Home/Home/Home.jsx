@@ -5,7 +5,8 @@ import Toys from "../Toys/Toys";
 
 
 const Home = () => {
-    const toys = useLoaderData();
+    const categoryData = useLoaderData();
+    console.log(categoryData);
     return (
         <div>
              <Slider></Slider>

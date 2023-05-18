@@ -22,7 +22,7 @@ import UpdateMyToys from "../pages/MyToys/UpdateMyToys";
       children :[
          {
             path :'/',
-            element : <Home></Home>,
+            element : <Home></Home>
          },
          {
            path :'/login' ,
