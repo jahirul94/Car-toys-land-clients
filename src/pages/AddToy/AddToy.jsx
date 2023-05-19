@@ -39,7 +39,7 @@ const AddToy = () => {
 
 
     return (
-        <div className="p-24">
+        <div className="sm:my-10 md:p-24">
             <form onSubmit={handleForm}>
                 <h2 className="text-5xl font-extrabold text-center mb-16">Add A Toy </h2>
                 {/* toy name and photo url  */}

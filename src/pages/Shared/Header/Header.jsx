@@ -59,13 +59,13 @@ const Header = () => {
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabIndex={0} className="menu menu-compact bg-neutral dropdown-content mt-3 p-2 shadow rounded-box w-52">
                             {navOption}
                         </ul>
                     </div>
                     <div className="flex items-center">
                         <img src="https://img.freepik.com/free-vector/different-kind-toys_1308-74241.jpg?size=626&ext=jpg&ga=GA1.2.1707419779.1680549688&semt=ais" className="h-12 w-12 me-2 rounded-3xl" alt="" />
-                        <h2 className="text-2xl font-bold">Animal Toys</h2>
+                        <h2 className="text-2xl font-bold">Cars Toy Store</h2>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
