@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="hero-content">
                 <div className="w-1/2"></div>
                 <div className="w-1/2">
-                    <h1 className="font-bold text-[#ff4f3b] mb-5 sm:text-xl lg:text-7xl  ">Welcome To Toys World</h1>
+                    <h1 className="font-bold text-[#ff4f3b] mb-5 sm:text-xl lg:text-7xl  ">Welcome To Car Toy Land</h1>
                     <p className="mb-5 font-semibold sm:text-xs lg:text-xl pb-28">We are Provide The Best Toy for your Child's Smile . We are delivery smile with Toy .Get you're unbeatable experience with our awesome toys</p>
                 </div>
             </div>

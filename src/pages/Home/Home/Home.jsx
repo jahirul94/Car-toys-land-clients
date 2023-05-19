@@ -1,9 +1,10 @@
 import Gallery from "../Gallery/Gallery";
 import Toys from "../Toys/Toys";
-import { Tab, Tabs, TabList } from 'react-tabs';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
+import OurServices from "../OurServices/OurServices";
 
 
 const Home = () => {
@@ -29,6 +30,9 @@ const Home = () => {
               <Tab onClick={() => setTabs('truck')}>Truck</Tab>
               <Tab onClick={() => setTabs('regular car')}>Regular car</Tab>
             </TabList>
+             <TabPanel></TabPanel>
+             <TabPanel></TabPanel>
+             <TabPanel></TabPanel>
           </Tabs>
           <div className="grid gap-4 py-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {
@@ -36,6 +40,7 @@ const Home = () => {
             }
           </div>
       </div>
+      <OurServices></OurServices>
     </div>
   );
 };
