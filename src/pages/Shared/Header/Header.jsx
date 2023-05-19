@@ -18,7 +18,7 @@ const Header = () => {
             confirmButtonText: 'Yes, Log Out !'
         }).then((result) => {
             if (result.isConfirmed) {
-                     logOut()
+                logOut()
                     .then(() => {
                         Swal.fire(
                             'Log Out!',
@@ -64,8 +64,8 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="flex items-center">
-                        <img src="https://img.freepik.com/free-vector/different-kind-toys_1308-74241.jpg?size=626&ext=jpg&ga=GA1.2.1707419779.1680549688&semt=ais" className="h-12 w-12 me-2 rounded-3xl" alt="" />
-                        <h2 className="text-2xl font-bold">Car Toy Land</h2>
+                        <img src="https://i.ibb.co/TvMxyph/car-toys-logo-icon-vector-35444153-1.jpg" className="h-12 w-12 me-2 rounded-3xl" alt="" />
+                        <h2 className="text-2xl font-bold">Car Toys Land</h2>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
