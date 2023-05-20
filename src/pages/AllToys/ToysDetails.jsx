@@ -8,7 +8,7 @@ const ToysDetails = () => {
     return (
         <div className="lg:flex space-x-10">
             <img className="w-1/2 m-10 rounded-2xl" src={toysPicture} alt="" />
-            <div className="w-1/2  m-10 rounded-2xl my-auto pb-28">
+            <div className="w-1/2 m-10 rounded-2xl my-auto pb-28 pt-10">
                 <h2 className="text-3xl font-bold mb-6">{name}</h2>
                 <h2 className="text-xl font-semibold">Seller : {sellerName}</h2>
                 <h2 className="text-xl font-semibold">Seller Email : {sellerEmail}</h2>

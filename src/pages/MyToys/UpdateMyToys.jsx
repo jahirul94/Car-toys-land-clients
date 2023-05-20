@@ -15,7 +15,7 @@ const UpdateMyToys = () => {
         const detailDescription = form.description.value;
         const updatedToy = { price, availableQuantity, detailDescription }
         
-        fetch(`http://localhost:5000/myToys/${id}`, {
+        fetch(`https://assignment-eleven-server-rose.vercel.app/myToys/${id}`, {
             method: "PATCH",
             headers: {
                 'content-type': 'application/json'

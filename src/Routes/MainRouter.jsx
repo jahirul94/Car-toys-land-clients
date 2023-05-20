@@ -39,12 +39,12 @@ import UpdateMyToys from "../pages/MyToys/UpdateMyToys";
          {
           path:'/allToys',
           element : <AllToys></AllToys>,
-          loader: () => fetch('http://localhost:5000/allToys')
+          loader: () => fetch('https://assignment-eleven-server-rose.vercel.app/allToys')
          },
          {
           path:'/allToys/:id',
           element : <PrivateRoute><ToysDetails></ToysDetails></PrivateRoute>,
-          loader : ({params}) => fetch(`http://localhost:5000/allToys/${params.id}`)
+          loader : ({params}) => fetch(`https://assignment-eleven-server-rose.vercel.app/allToys/${params.id}`)
          },
          {
           path:'/addAToys',
@@ -57,7 +57,7 @@ import UpdateMyToys from "../pages/MyToys/UpdateMyToys";
          {
           path :'/myToys/:id',
           element : <UpdateMyToys></UpdateMyToys>,
-          loader : ({params}) => fetch(`http://localhost:5000/myToys/${params.id}`)
+          loader : ({params}) => fetch(`https://assignment-eleven-server-rose.vercel.app/myToys/${params.id}`)
          }
       ]
     },

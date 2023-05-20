@@ -6,15 +6,15 @@ const Gallery = () => {
     const [pictures, setPictures] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/toysPictures')
+        fetch('https://assignment-eleven-server-rose.vercel.app/toysPictures')
             .then(res => res.json())
             .then(data => setPictures(data))
     }, [])
 
     return (
-        <div className="shadow-md bg-slate-300 py-4 rounded-2xl">
+        <div className="shadow-lg shadow-slate-400 py-4 rounded-lg border border-gray-300">
             <div className="text-center py-4">
-                <h2 className="text-4xl font-bold"> Explore Our Products </h2>
+                <h2 className="text-4xl font-bold"> Featured Products </h2>
             </div>
             <Marquee pauseOnHover className="py-10">
                 {

@@ -5,6 +5,7 @@ import 'react-tabs/style/react-tabs.css';
 import { useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
 import OurServices from "../OurServices/OurServices";
+import Review from "../Review/Review";
 
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
   const [toys, setToys] = useState([])
   const [ tabs , setTabs ] = useState('sports car')
   useEffect(() => {
-    fetch(`http://localhost:5000/categoryData?category=${tabs}`,{
+    fetch(`https://assignment-eleven-server-rose.vercel.app/categoryData?category=${tabs}`,{
         method :"GET"
     })
       .then(res => res.json())
@@ -20,10 +21,10 @@ const Home = () => {
   }, [tabs])
 
   return (
-    <div className="space-y-12 pt-2">
+    <div className="space-y-12 pt-2 mb-10">
       <Banner></Banner>
       <Gallery></Gallery>
-      <div className="shadow-md rounded-2xl my-4 bg-slate-300">
+      <div className="rounded-lg my-4 shadow-lg shadow-slate-400 border border-gray-300">
          <h2 className="text-center text-4xl font-bold py-8">Find Your Toy With You're Favorite Category</h2>
           <Tabs>
             <TabList>
@@ -35,12 +36,13 @@ const Home = () => {
              <TabPanel></TabPanel>
              <TabPanel></TabPanel>
           </Tabs>
-          <div className="grid gap-4 py-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 px-4 py-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {
               toys.map(toy => <Toys key={toy._id} toy={toy}></Toys>)
             }
           </div>
       </div>
+      <Review></Review>
       <OurServices></OurServices>
     </div>
   );

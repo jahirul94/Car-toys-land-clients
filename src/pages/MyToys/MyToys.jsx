@@ -9,7 +9,7 @@ const MyToys = () => {
     const [reload, setReload] = useState(false)
     const [myToys, setMyToys] = useState([]);
     const [ sort , setSort ] = useState("")
-    const url = `http://localhost:5000/myToys?email=${user?.email}&sort=${sort}`;
+    const url = `https://assignment-eleven-server-rose.vercel.app/myToys?email=${user?.email}&sort=${sort}`;
     //    load my data 
     useEffect(() => {
         fetch(url, {
@@ -35,7 +35,7 @@ const MyToys = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 // delete operation start 
-                fetch(`http://localhost:5000/myToys/${id}`, {
+                fetch(`https://assignment-eleven-server-rose.vercel.app/myToys/${id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())

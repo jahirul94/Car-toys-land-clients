@@ -16,7 +16,7 @@ const AddToy = () => {
         const availableQuantity = form.quantity.value;
         const detailDescription = form.description.value;
         const addedToy = { name , toysPicture , sellerName , sellerEmail , category , price , rating , availableQuantity , detailDescription }
-        fetch('http://localhost:5000/addAToy' , {
+        fetch('https://assignment-eleven-server-rose.vercel.app/addAToy' , {
             method :"POST",
             headers :{
                 'content-type':'application/json'
