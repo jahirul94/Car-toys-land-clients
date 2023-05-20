@@ -10,7 +10,6 @@ const MyToys = () => {
     const [myToys, setMyToys] = useState([]);
     const [ sort , setSort ] = useState("")
     const url = `http://localhost:5000/myToys?email=${user?.email}&sort=${sort}`;
-
     //    load my data 
     useEffect(() => {
         fetch(url, {
@@ -54,7 +53,6 @@ const MyToys = () => {
             }
         })
     }
- console.log(sort);
 
     return (
         <div className="my-10 min-h-screen">

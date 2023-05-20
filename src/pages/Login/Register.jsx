@@ -1,12 +1,14 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link , useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import Swal from "sweetalert2";
 
 const Register = () => {
+    document.title = "register" + "-" + "Car Toys Land" ;
     const [ error , setError ] = useState("");
     const { createUser } = useContext(AuthContext);
+    const navigate = useNavigate();
     const handleRegister = event =>{
         event.preventDefault();
         const form = event.target;
@@ -17,6 +19,8 @@ const Register = () => {
         createUser( email , password )
         .then( result =>{
             const user = result.user ;
+            setError("")
+            navigate("/")
             if(user){
                 updateData( user , name , photo )
                 Swal.fire(

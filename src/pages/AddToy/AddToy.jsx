@@ -49,7 +49,7 @@ const AddToy = () => {
                             <span className="label-text">Toy Name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="name" placeholder="Enter Toy Name" className="input input-bordered w-full me-4" />
+                            <input type="text" name="name" placeholder="Enter Toy Name" className="input input-bordered w-full me-4" required />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">
@@ -57,7 +57,7 @@ const AddToy = () => {
                             <span className="label-text">Toy Picture URL</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="photo" placeholder="Picture URL of the toy" className="input input-bordered w-full" />
+                            <input type="text" name="photo" placeholder="Picture URL of the toy" className="input input-bordered w-full" required/>
                         </label>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const AddToy = () => {
                             <span className="label-text">Seller name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="seller" placeholder="seller name" className="input input-bordered w-full me-4" />
+                            <input type="text" name="seller" placeholder="seller name" className="input input-bordered w-full me-4"  required />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">
@@ -87,7 +87,7 @@ const AddToy = () => {
                             <span className="label-text">Sub-category</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="category" placeholder="Enter toys category Like teddy bear , dogs , cat , cows, etc." className="input input-bordered w-full me-4" />
+                            <input type="text" name="category" placeholder="Enter toys category Like sports car , truck , regular car etc." className="input input-bordered w-full me-4" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">
@@ -95,7 +95,7 @@ const AddToy = () => {
                             <span className="label-text">Price</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="price" placeholder="Enter Toy Price" className="input input-bordered w-full" />
+                            <input type="text" name="price" placeholder="Enter Toy Price" className="input input-bordered w-full" required />
                         </label>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ const AddToy = () => {
                             <span className="label-text">Available quantity</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="quantity" placeholder="Available quantity" className="input input-bordered w-full" />
+                            <input type="text" name="quantity" placeholder="Available quantity" className="input input-bordered w-full" required />
                         </label>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const AllToys = () => {
   const [toys , setToys] = useState(useLoaderData())
-
+  document.title = "allToys" + "-" + "Car Toys Land" ;
   const handleSearch = event => {
     event.preventDefault();
     const name = event.target.name.value;

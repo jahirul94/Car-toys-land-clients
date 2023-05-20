@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 
 
 const Login = () => {
+    document.title = "login" + "-" + "Car Toys Land" ;
     const { logInUser, loginWithGoogle } = useContext(AuthContext)
     const [error, setError] = useState("");
     const navigate = useNavigate();
@@ -22,6 +23,7 @@ const Login = () => {
         logInUser(email, password)
             .then(result => {
                 const user = result.user;
+                setError("")
                 if (user) {
                     Swal.fire(
                         'Login!',
@@ -42,6 +44,7 @@ const Login = () => {
         loginWithGoogle()
             .then(result => {
                 const loggedUser = result.user;
+                setError("")
                 if(loggedUser){
                     Swal.fire(
                         'Done!',

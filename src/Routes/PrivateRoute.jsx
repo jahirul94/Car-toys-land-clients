@@ -7,8 +7,9 @@ import Swal from "sweetalert2";
 const PrivateRoute = ({ children }) => {
      const location = useLocation();
      const { user, loading } = useContext(AuthContext);
+     document.title = location?.pathname.split("/")[1] + "-" + "Car Toys Land" || "Car Toys Land" ;
      if (loading) {
-          return <div className="min-h-screen lg:flex items-center justify-start"><progress className="progress progress-warning w-56" value="100" max="100"></progress></div>
+          return <div className="min-h-screen lg:flex items-center justify-start"><img src="https://content.pymnts.com/wp-content/uploads/2016/06/Slow-load-times-eCommerce.png" alt="" className="min-w-full" /></div>
      }
      if (user) {
           return children

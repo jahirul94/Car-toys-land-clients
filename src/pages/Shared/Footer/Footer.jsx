@@ -1,4 +1,4 @@
-import { FaCopyright, FaFacebook, FaInstagram, FaLocationArrow, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaCopyright, FaFacebook, FaInbox, FaInstagram, FaLocationArrow, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 
@@ -9,6 +9,7 @@ const Footer = () => {
                 <img className="w-20 h-20 rounded-3xl" src="https://i.ibb.co/TvMxyph/car-toys-logo-icon-vector-35444153-1.jpg" alt="" />
                 <h2 className="text-lg font-bold">Car Toys Land</h2>
                 <p className="flex items-center"><FaLocationArrow className="me-2"></FaLocationArrow> California , United States</p>
+                 <p className="flex items-center"><FaInbox className="me-2"></FaInbox> Email : cartoys@land.com</p>
             </div>
             <div>
                 <span className="footer-title">Company</span>

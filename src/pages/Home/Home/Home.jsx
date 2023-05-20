@@ -8,6 +8,7 @@ import OurServices from "../OurServices/OurServices";
 
 
 const Home = () => {
+  document.title = "Car Toys Land" ;
   const [toys, setToys] = useState([])
   const [ tabs , setTabs ] = useState('sports car')
   useEffect(() => {

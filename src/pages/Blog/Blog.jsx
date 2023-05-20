@@ -1,5 +1,6 @@
 
 const Blog = () => {
+    document.title = "blog" + "-" + "Car Toys Land" ;
     return (
         <div className="px-8 pt-10 min-h-screen space-y-8">
             <div>
