@@ -1,11 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
+    const location = useLocation();
+    // {location.pathname == '/login' ? "activeLink" : 'inActiveLink' }
     // logout functionality 
     const handleLogOut = () => {
         Swal.fire({
@@ -42,12 +44,12 @@ const Header = () => {
 
 
     const navOption = <>
-        <li><Link className="font-semibold" to='/'>Home</Link></li>
-        <li><Link className="font-semibold" to='/blogs'>Blogs</Link></li>
-        <li><Link className="font-semibold" to='/allToys'>All Toys</Link></li>
+        <li><Link className={location.pathname == '/' ? 'underline font-semibold' : 'font-semibold'} to='/'>Home</Link></li>
+        <li><Link className={location.pathname == '/blogs' ? 'underline font-semibold' : 'font-semibold'} to='/blogs'>Blogs</Link></li>
+        <li><Link className={location.pathname == '/allToys' ? 'underline font-semibold' : 'font-semibold'} to='/allToys'>All Toys</Link></li>
         {user && <div className="lg:flex">
-            <li><Link className="font-semibold" to='/myToys'>My Toys</Link></li>
-            <li><Link className="font-semibold" to='/addAToys'>Add A Toy</Link></li>
+            <li><Link className={location.pathname == '/myToys' ? 'underline font-semibold' : 'font-semibold'} to='/myToys'>My Toys</Link></li>
+            <li><Link className={location.pathname == '/addAToys' ? 'underline font-semibold' : 'font-semibold'} to='/addAToys'>Add A Toy</Link></li>
             <li><button className="font-semibold" onClick={handleLogOut}>Log Out</button></li>
         </div>}
     </>

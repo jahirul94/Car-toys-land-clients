@@ -35,11 +35,11 @@ const Banner = () => {
 
 
     return (
-        <div className="hero lg:min-h-screen sm:image-full rounded-2xl" style={{ backgroundImage: `url("https://cdn.shopify.com/s/files/1/0475/2385/6541/files/slider2-bg.jpg?v=1613719740")` }}>
+        <div className="hero lg:min-h-screen sm:img-full rounded-2xl" style={{ backgroundImage: `url("https://cdn.shopify.com/s/files/1/0475/2385/6541/files/slider2-bg.jpg?v=1613719740")` }}>
             <div className="hero-overlay rounded-2xl bg-opacity-30"></div>
             <div className="hero-content">
-                <div className="sm:w-0 lg:w-1/2"></div>
-                <div data-aos="fade-left" className="sm:w-0 lg:w-1/2">
+                <div className="sm:w-0 md:w-5 lg:w-1/2"></div>
+                <div data-aos="fade-left" className="sm:w-full md:w-full lg:w-1/2">
                     <h1 className="title text-[#DB005B]">Welcome <br /> To Car Toys Land</h1>
                     <p className="banner-text text-black">We are Provide The Best Toy for your Child's Smile . We are delivery smile with Toy .Get you're unbeatable experience with our awesome toys</p>
                     {/* Timer  start  */}
