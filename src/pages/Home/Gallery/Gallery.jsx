@@ -17,7 +17,7 @@ const Gallery = () => {
             <div className="grid gap-4 px-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {
                     pictures?.map(picture => <div data-aos="zoom-in" key={picture._id}>
-                        <img className="h-96 w-full rounded-xl" src={picture.toysPicture} alt="" />
+                        <img className="h-80 w-full rounded-xl" src={picture.toysPicture} alt="" />
                     </div>)
                 }
             </div>

@@ -3,7 +3,7 @@
 const Review = () => {
     return (
         <div className="w-full px-4 shadow-md shadow-slate-400 border border-gray-300" >
-            <h2 className="text-center text-3xl font-bold py-10 mb-10">Customers Reviews</h2>
+            <h2 className="text-center text-3xl font-bold py-10 mb-6">Customers Reviews</h2>
             <div className="lg:flex">
                 <div className="lg:w-1/3">
                     <div className="avatar flex justify-center">
@@ -12,7 +12,7 @@ const Review = () => {
                         </div>
                     </div>
                     <h4 className="text-xl font-bold text-center py-2">Jackson Williams</h4>
-                    <p className="p-4 mb-5"><small>I recently had the pleasure of purchasing car toys from Car Toys Land, and I must say, it was an outstanding experience from start to finish. Their fantastic selection of car toys, ranging from classic vintage models to modern sports cars, is truly impressive. The attention to detail in each miniature replica is remarkable, capturing the essence and intricacies of the real-life vehicles. Additionally, their exceptional customer service stood out as their knowledgeable and friendly support team provided valuable recommendations.</small></p>
+                    <p className="p-4 mb-5"><small>I recently had the pleasure of purchasing car toys from Car Toys Land, and I must say, it was an outstanding experience from start to finish. Their fantastic selection of car toys, ranging from classic vintage models to modern sports cars, is truly impressive. The attention....</small><a href="">more</a></p>
                 </div>
                 <div className="lg:w-1/3">
                     <div className="avatar flex justify-center">
@@ -22,7 +22,7 @@ const Review = () => {
                     </div>
                     <h4 className="text-xl font-bold text-center py-2">Nathan Hayes</h4>
                     <p className="p-4 mb-5"><small>I had an amazing experience shopping for car toys on Car Toys    Land
-                        . Their extensive collection of car toys, featuring a wide range of brands and models, left me in awe. The attention to detail and craftsmanship in each miniature replica was truly impressive, making them standout pieces in my collection.The level of detail and accuracy in their miniature replicas is exceptional, capturing the essence of the real vehicles. What sets Car Toys Land apart is their outstanding customer service. The support team was friendly, knowledgeable, and went above and beyond to assist me in finding the perfect additions to my collection.</small></p>
+                        . Their extensive collection of car toys, featuring a wide range of brands and models, left me in awe. The attention to detail and craftsmanship in each miniature replica was truly impressive...</small><a href="">more</a></p>
                 </div>
                 <div className="lg:w-1/3">
                     <div className="avatar flex justify-center">
@@ -31,7 +31,7 @@ const Review = () => {
                         </div>
                     </div>
                      <h4 className="text-xl font-bold text-center py-2">Emma Anderson</h4>
-                    <p className="p-4"><small>I recently discovered Car Toys Land , and I couldn't be happier with my car toy purchase. Their vast selection of car toys is a treasure trove for any collector or enthusiast. From classic models to modern supercars, they have something for every taste. The level of detail and accuracy in their miniature replicas is exceptional, capturing the essence of the real vehicles. What sets Car Toys Land apart is their outstanding customer service. The support team was friendly, knowledgeable, and went above and beyond to assist me in finding the perfect additions to my collection.</small></p>
+                    <p className="p-4"><small>I recently discovered Car Toys Land , and I couldn't be happier with my car toy purchase. Their vast selection of car toys is a treasure trove for any collector or enthusiast. From classic models to modern supercars, they have something for every taste...</small><a href="">more</a></p>
                 </div>
             </div>
         </div>
