@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import DisplayMyToys from "./DisplayMyToys";
 import Swal from "sweetalert2";
+import { FaArrowDown } from "react-icons/fa";
 
 
 const MyToys = () => {
@@ -59,7 +60,7 @@ const MyToys = () => {
             <div className="text-end px-10">
                 {/* dropdown start  */}
                    <div className="dropdown dropdown-end">
-                        <label tabIndex={0} className="btn btn-ghost rounded-btn">Sort By</label>
+                        <label tabIndex={0} className="btn btn-ghost rounded-btn">Sort By<FaArrowDown className="ms-2 font-semibold"></FaArrowDown> </label>
                         <ul tabIndex={0} className="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
                             <li><button onClick={() => setSort("")}>Default</button></li>
                             <li><button onClick={() => setSort(1)}>Price {"("} Low {">"} High {")"}</button></li>
