@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a.active {
+  @apply underline underline-offset-4 bg-neutral scale-105 transition-transform duration-200;
+}
+
+/* for large device */
+.title-lg {
+  @apply text-5xl font-bold mb-5 pt-10;
+}
+
+.banner-text-lg {
+  @apply text-base leading-5 font-medium;
+}
+
+.discount-title-lg {
+  @apply pt-10 pb-4 text-2xl font-bold;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}

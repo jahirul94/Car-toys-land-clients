@@ -1,23 +1,25 @@
-import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import SectionTitle from "../../../components/SectionTitle";
+
 
 const Gallery = () => {
-    const [pictures, setPictures] = useState([]);
-    useEffect(() => {
-        fetch('https://assignment-eleven-server-rose.vercel.app/toysPictures')
-            .then(res => res.json())
-            .then(data => setPictures(data))
-    }, [])
+
+    const { data: pictures = [] } = useQuery({
+        queryKey: ["pictures"],
+        queryFn: async () => {
+            const res = await axios.get('https://assignment-eleven-server-rose.vercel.app/toysPictures')
+            return res.data;
+        }
+    })
 
     return (
-        <div className="shadow-lg shadow-slate-400 py-4 rounded-lg border border-gray-300">
-            <div className="text-center py-4">
-                <h2 className="text-4xl font-bold mb-2">Dream Drive Showcase</h2>
-                <p className="text-lg font-medium mb-6">Explore our available products gallery</p>
-            </div>
-            <div className="grid gap-4 px-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="shadow-lg shadow-slate-400 pb-4 rounded-lg border border-gray-300">
+            <SectionTitle heading={"Dream Drive Showcase"} subHeading={"Explore our available products gallery"}></SectionTitle>
+            <div className="grid gap-8 px-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {
                     pictures?.map(picture => <div data-aos="zoom-in" key={picture._id}>
-                        <img className="h-80 w-full rounded-xl" src={picture.toysPicture} alt="" />
+                        <img className="h-80 w-full rounded-xl hover:scale-110 transition-transform duration-500" src={picture.toysPicture} alt="" />
                     </div>)
                 }
             </div>
