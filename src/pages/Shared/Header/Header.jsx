@@ -43,7 +43,7 @@ const Header = () => {
     </>
     return (
         <div>
-            <div className="navbar bg-neutral text-neutral-content px-8">
+            <div className="navbar bg-neutral text-neutral-content px-8 font-[poppins]">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -54,8 +54,8 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="flex items-center">
-                        <img src="https://i.ibb.co/TvMxyph/car-toys-logo-icon-vector-35444153-1.jpg" className="h-12 w-12 me-2 rounded-3xl" alt="" />
-                        <h2 className="text-2xl font-bold">Car Toys Land</h2>
+                        <img src="https://i.ibb.co/80TkdYy/384496107-1006146903984604-8073565797502982080-n.png" className="h-12 w-16 md:w-28 me-2 rounded-lg" alt="" />
+                        <h2 className="text-lg md:text-2xl font-bold">Car Toys Land</h2>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">

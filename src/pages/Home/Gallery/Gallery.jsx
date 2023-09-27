@@ -14,7 +14,7 @@ const Gallery = () => {
     })
 
     return (
-        <div className="shadow-lg shadow-slate-400 pb-4 rounded-lg border border-gray-300">
+        <div className="shadow-lg pb-4 rounded-lg">
             <SectionTitle heading={"Dream Drive Showcase"} subHeading={"Explore our available products gallery"}></SectionTitle>
             <div className="grid gap-8 px-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {

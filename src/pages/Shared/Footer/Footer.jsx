@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="footer p-10 bg-neutral text-neutral-content">
             <div className="lg:ps-20">
-                <img className="w-20 h-20 rounded-3xl" src="https://i.ibb.co/TvMxyph/car-toys-logo-icon-vector-35444153-1.jpg" alt="" />
+                <img className="w-28 h-14 rounded" src="https://i.ibb.co/80TkdYy/384496107-1006146903984604-8073565797502982080-n.png" alt="" />
                 <h2 className="text-lg font-bold">Car Toys Land</h2>
                 <p className="flex items-center"><FaLocationArrow className="me-2"></FaLocationArrow> California , United States</p>
                  <p className="flex items-center"><FaInbox className="me-2"></FaInbox> Email : cartoys@land.com</p>

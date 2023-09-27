@@ -129,7 +129,7 @@ const AddToy = () => {
                         <input type="text" name="description" placeholder="Detail description" className="input input-bordered w-full" />
                     </label>
                 </div>
-                <input type="submit" value="Add Toy" className="btn btn-block" />
+                <input type="submit" value="Add Toy" className="btn btn-block btn-outline" />
             </form>
         </div>
     );

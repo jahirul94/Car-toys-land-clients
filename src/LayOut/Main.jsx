@@ -8,7 +8,7 @@ const Main = () => {
   const location = useLocation();
 
   return (
-    <div className="bg-slate-200">
+    <div>
       <Header></Header>
       {location.pathname === "/" && <Banner></Banner>}
       <div className="w-full md:w-11/12 md:mx-auto">
